@@ -9,6 +9,7 @@ rm /tmp/eicar-files.tar.gz.b64
 
 CMD echo "### Dropping Base64 encoded EICAR files ###" && \
 tar xzf /tmp/eicar-files.tar.gz -C /tmp/ && \
+if [ $? -eq 0 ]; then echo "--> Done"; else echo "Error: Could not extract the files"; fi && \
 sleep 1 && \
 for f in `ls /tmp/ | grep .b64`; do \
   srcfile="/tmp/$f"; \
