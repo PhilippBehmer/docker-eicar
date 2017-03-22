@@ -6,4 +6,26 @@
 [![](https://images.microbadger.com/badges/version/philippbehmer/docker-eicar.svg)](https://microbadger.com/images/philippbehmer/docker-eicar)
 
 # Description
-Test your Anti-Virus detection in docker containers
+Test your signature-based Anti-Virus realtime protection in docker containers.
+
+# How to run
+    # Get the latest image
+    docker pull philippbehmer/docker-eicar:latest
+    # Run container
+    docker run philippbehmer/docker-eicar:latest
+
+# Sample output
+    user@av-protected-machine:~/$ docker run philippbehmer/docker-eicar:latest
+    ### Dropping Base64 encoded EICAR files ###
+
+    ### Dropping /tmp/eicar.com ###
+    --> EICAR was successfully detected and removed!
+
+    ### Dropping /tmp/eicar.com.txt ###
+    --> EICAR was successfully detected and removed!
+
+    ### Dropping /tmp/eicar_com.zip ###
+    --> EICAR was successfully detected and removed!
+
+    ### Dropping /tmp/eicarcom2.zip ###
+    --> EICAR was successfully detected and removed!
