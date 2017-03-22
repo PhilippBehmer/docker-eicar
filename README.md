@@ -17,7 +17,8 @@ Test your signature-based Anti-Virus realtime protection in docker containers.
 # Sample output
     user@av-protected-machine:~/$ docker run philippbehmer/docker-eicar:latest
     ### Dropping Base64 encoded EICAR files ###
-
+    --> Done
+    
     ### Dropping /tmp/eicar.com ###
     --> EICAR was successfully detected and removed!
 
