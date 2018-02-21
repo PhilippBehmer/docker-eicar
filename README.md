@@ -7,6 +7,7 @@
 
 # Description
 Test your signature-based Anti-Virus realtime protection in docker containers.
+The EICAR test files are encoded and included into the dockerfile to avoid any network security system detections.
 
 # How to run
     # Get the latest image
